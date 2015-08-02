@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Thing
+
+# Model Form Field configuration
+form: $/bedard/test/models/thing/fields.yaml
+
+# Model Class name
+modelClass: Bedard\Test\Models\Thing
+
+# Default redirect location
+defaultRedirect: bedard/test/things
+
+# Create page
+create:
+    title: Create Thing
+    redirect: bedard/test/things/update/:id
+    redirectClose: bedard/test/things
+
+# Update page
+update:
+    title: Edit Thing
+    redirect: bedard/test/things
+    redirectClose: bedard/test/things
+
+# Preview page
+preview:
+    title: Preview Thing
